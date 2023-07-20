@@ -18,6 +18,9 @@ extension ContentView {
         @Published var selectedLoation: Location?
         @Published var isUnlocked = false
         
+        @Published var biometricError: BiometricError?
+        @Published var hasError = false
+        
         init() {
             do {
                 let data = try Data(contentsOf: savePath)
@@ -54,11 +57,15 @@ extension ContentView {
                             self.isUnlocked = true
                         }
                     } else {
-                        // error
+                        Task { @MainActor in
+                            self.biometricError = .nonMatching
+                            self.hasError = true
+                        }
                     }
                 }
             } else {
-                // error
+                biometricError = .unavailable
+                hasError = true
             }
         }
         
@@ -68,6 +75,19 @@ extension ContentView {
                 try data.write(to: savePath, options: [.atomic, .completeFileProtection])
             } catch {
                 print("Unable to save data.")
+            }
+        }
+        
+        enum BiometricError: LocalizedError {
+            case unavailable, nonMatching
+            
+            var errorDescription: String? {
+                switch self {
+                case .unavailable:
+                    return "Biometrics not available"
+                case .nonMatching:
+                    return "ID did not match"
+                }
             }
         }
     }

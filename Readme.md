@@ -9,3 +9,5 @@ As usual, at the end of the guided tutorial there will be three challenges for m
 **Challenge #1**: Our + button is rather hard to tap. Try moving all its modifiers to the image inside the button – what difference does it make, and can you think why?
 
 *Answer*: The clickable area on the button is determined by the size of its label - in this case, the image inside it. Changing the button's shape and size later on will affect its looks, but not the clickable area.
+
+**Challenge #2**: Our app silently fails when errors occur during biometric authentication, so add code to show those errors in an alert.

@@ -69,6 +69,9 @@ struct ContentView: View {
             .background(.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .alert(isPresented: $viewModel.hasError, error: viewModel.biometricError) {
+                Button("Ok") { }
+            }
         }
     }
 }
