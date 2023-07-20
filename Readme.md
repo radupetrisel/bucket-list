@@ -11,3 +11,5 @@ As usual, at the end of the guided tutorial there will be three challenges for m
 *Answer*: The clickable area on the button is determined by the size of its label - in this case, the image inside it. Changing the button's shape and size later on will affect its looks, but not the clickable area.
 
 **Challenge #2**: Our app silently fails when errors occur during biometric authentication, so add code to show those errors in an alert.
+
+**Challenge #3**: Create another view model, this time for EditView. What you put in the view model is down to you, but I would recommend leaving dismiss and onSave in the view itself – the former uses the environment, which can only be read by the view, and the latter doesn’t really add anything when moved into the model.

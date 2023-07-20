@@ -17,6 +17,7 @@
 		7CE7DD692A695DC500C752CC /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7DD682A695DC500C752CC /* EditView.swift */; };
 		7CE7DD6B2A69730900C752CC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7DD6A2A69730900C752CC /* Result.swift */; };
 		7CE7DD6D2A699DE100C752CC /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7DD6C2A699DE100C752CC /* ContentView-ViewModel.swift */; };
+		7CE7DD6F2A69AC2700C752CC /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7DD6E2A69AC2700C752CC /* EditView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		7CE7DD682A695DC500C752CC /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		7CE7DD6A2A69730900C752CC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		7CE7DD6C2A699DE100C752CC /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		7CE7DD6E2A69AC2700C752CC /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				7CE7DD682A695DC500C752CC /* EditView.swift */,
 				7CE7DD642A69231600C752CC /* FileManager-DocumentsDirectory.swift */,
 				7CE7DD6C2A699DE100C752CC /* ContentView-ViewModel.swift */,
+				7CE7DD6E2A69AC2700C752CC /* EditView-ViewModel.swift */,
 				7CE7DD582A691CD700C752CC /* Assets.xcassets */,
 				7CE7DD5A2A691CD700C752CC /* Preview Content */,
 			);
@@ -161,6 +164,7 @@
 				7CE7DD692A695DC500C752CC /* EditView.swift in Sources */,
 				7CE7DD552A691CD600C752CC /* BucketListApp.swift in Sources */,
 				7CE7DD672A6954B500C752CC /* Location.swift in Sources */,
+				7CE7DD6F2A69AC2700C752CC /* EditView-ViewModel.swift in Sources */,
 				7CE7DD6D2A699DE100C752CC /* ContentView-ViewModel.swift in Sources */,
 				7CE7DD652A69231600C752CC /* FileManager-DocumentsDirectory.swift in Sources */,
 			);
